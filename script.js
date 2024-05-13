@@ -36,7 +36,20 @@ function playRound(humanChoice,computerChoice)
  scoreboard = humanScore + ':' + computerScore;
  console.log(scoreboard);
 }
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
+//const humanSelection = getHumanChoice();
+//const computerSelection = getComputerChoice();
 
-playRound(humanSelection,computerSelection)
+//playRound(humanSelection,computerSelection)
+
+let rounds=1
+function playGame()
+{
+    
+    while(rounds<=5){++rounds;
+        const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice();
+        playRound(humanSelection,computerSelection)}
+
+}
+
+playGame()
