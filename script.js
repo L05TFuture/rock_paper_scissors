@@ -24,17 +24,18 @@ let scoreboard= humanScore + ':' + computerScore
 
 function playRound(humanChoice,computerChoice)
 {
-  if (humanChoice=='rock' && computerChoice=='rock'){console.log("Its a tie!")}
- else if(humanChoice=='rock' && computerChoice=='scissors'){console.log('You win! rock beats scissors'); ++humanScore; }
- else if (humanChoice=='rock' &&  computerChoice=='paper'){console.log('You lose! rock loses to paper'); ++computerScore; }
- else if (humanChoice=='paper' && computerChoice=='paper'){console.log('Its a tie!')}
- else if (humanChoice=='paper' && computerChoice=='scissors'){console.log('You lose! paper loses to rock'); ++computerScore;}
- else if (humanChoice=='paper' && computerChoice=='rock'){console.log('You win! paper beats rock');humanScore++}
- else if (humanChoice=='scissors' && computerChoice=='scissors'){console.log('Its a tie!')}
- else if (humanChoice=='scissors' && computerChoice=='rock'){console.log('You lose! scissors loses to rock'); computerScore++}
- else if (humanChoice=='scissors' && computerChoice=='paper'){console.log('You win! scissors beats paper'); computerScore++}
+  if (humanChoice=='rock' && computerChoice=='rock'){console.log("Its a tie!");alert('Its a tie')}
+ else if(humanChoice=='rock' && computerChoice=='scissors'){console.log('You win! rock beats scissors'); ++humanScore;alert('You win! rock beats scissors') }
+ else if (humanChoice=='rock' &&  computerChoice=='paper'){console.log('You lose! rock loses to paper'); ++computerScore;alert('You lose! rock loses to paper') }
+ else if (humanChoice=='paper' && computerChoice=='paper'){console.log('Its a tie!');alert('Its a tie')}
+ else if (humanChoice=='paper' && computerChoice=='scissors'){console.log('You lose! paper loses to rock'); ++computerScore;alert('You lose! paper loses to rock')}
+ else if (humanChoice=='paper' && computerChoice=='rock'){console.log('You win! paper beats rock');humanScore++;alert('You win! paper beats rock')}
+ else if (humanChoice=='scissors' && computerChoice=='scissors'){console.log('Its a tie!');alert('Its a tie')}
+ else if (humanChoice=='scissors' && computerChoice=='rock'){console.log('You lose! scissors loses to rock'); computerScore++;alert('You lose! scissors loses to rock')}
+ else if (humanChoice=='scissors' && computerChoice=='paper'){console.log('You win! scissors beats paper'); computerScore++;alert('You win! scissors beats paper')}
  scoreboard = humanScore + ':' + computerScore;
  console.log(scoreboard);
+ 
 }
 //const humanSelection = getHumanChoice();
 //const computerSelection = getComputerChoice();
