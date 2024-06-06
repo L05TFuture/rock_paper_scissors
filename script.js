@@ -11,7 +11,7 @@ function getComputerChoice()
 
 
 function getHumanChoice()
-{let p=prompt("choose rock paper or scissors")
+{let p=  prompt("choose rock paper or scissors")
 //if (p!="rock"&&p!="paper"&&p!="scissors"){return 'error'}
 return p.toLowerCase()
 
